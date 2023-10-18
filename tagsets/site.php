@@ -8,7 +8,7 @@ function message($new_message,$icon="") {
         $separator = "<BR>";
     } else {
         $message_text = "";
-        $seperator = "";
+        $separator = "";
     }
     if ($icon) $new_message=icon($icon).' '.$new_message;
     $_SESSION['message_text']=$message_text.$seperator.$new_message;
