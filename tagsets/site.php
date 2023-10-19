@@ -11,7 +11,7 @@ function message($new_message,$icon="") {
         $separator = "";
     }
     if ($icon) $new_message=icon($icon).' '.$new_message;
-    $_SESSION['message_text']=$message_text.$seperator.$new_message;
+    $_SESSION['message_text']=$message_text.$separator.$new_message;
 }
 
 function show_message() {
